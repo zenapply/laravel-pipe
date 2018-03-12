@@ -30,8 +30,8 @@
         "illuminate/support": "^5.4"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.5",
-        "phpunit/phpunit": "^6.3.0"
+        "orchestra/testbench": "^3.4",
+        "phpunit/phpunit": ">=5.7"
     },
     "suggest": {
     },
