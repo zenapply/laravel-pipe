@@ -23,7 +23,7 @@ class WebhookController extends Controller
         if (method_exists($this, $method)) {
             return $this->{$method}($payload);
         } else {
-            return abort(404);
+            return abort(501, "Not Implemented");
         }
     }
 
@@ -35,7 +35,7 @@ class WebhookController extends Controller
      */
     protected function handleVideoRecorded($payload)
     {
-        abort(501); // Not Implemented
+        abort(501, "Not Implemented"); // Not Implemented
     }
 
     /**
@@ -46,7 +46,7 @@ class WebhookController extends Controller
      */
     protected function handleVideoTranscoded($payload)
     {
-        abort(501); // Not Implemented
+        abort(501, "Not Implemented"); // Not Implemented
     }
 
     /**
@@ -57,6 +57,6 @@ class WebhookController extends Controller
      */
     protected function handleVideoCopiedS3($payload)
     {
-        abort(501); // Not Implemented
+        abort(501, "Not Implemented"); // Not Implemented
     }
 }
