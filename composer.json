@@ -1,0 +1,47 @@
+{
+    "name": "tylercd100/pipe",
+    "description": "A library for addpipe.com videos",
+    "keywords": [
+        "laravel",
+        "zenapply"
+    ],
+    "type": "laravel-package",
+    "homepage": "https://github.com/tylercd100/pipe",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tyler Arbon",
+            "email": "tylerarbon@zenapply.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Zenapply\\Pipe\\":"src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zenapply\\Pipe\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^5.5.9",
+        "illuminate/support": "^5.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.5",
+        "phpunit/phpunit": "^6.3.0"
+    },
+    "suggest": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zenapply\\Pipe\\PipeServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    }
+}
