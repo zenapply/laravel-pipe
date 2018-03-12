@@ -1,12 +1,12 @@
 {
-    "name": "tylercd100/pipe",
+    "name": "zenapply/pipe",
     "description": "A library for addpipe.com videos",
     "keywords": [
         "laravel",
         "zenapply"
     ],
     "type": "laravel-package",
-    "homepage": "https://github.com/tylercd100/pipe",
+    "homepage": "https://github.com/zenapply/pipe",
     "license": "MIT",
     "authors": [
         {
