@@ -5,7 +5,7 @@ namespace Zenapply\Pipe\Http;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class WebhookController extends Controller
+abstract class WebhookController extends Controller
 {
 
     /**
@@ -33,10 +33,7 @@ class WebhookController extends Controller
      * @param  array  $payload
      * @return Response
      */
-    protected function handleVideoRecorded($payload)
-    {
-        abort(501, "Not Implemented"); // Not Implemented
-    }
+    abstract protected function handleVideoRecorded($payload);
 
     /**
      * Handle a Pipe webhook.
@@ -44,10 +41,7 @@ class WebhookController extends Controller
      * @param  array  $payload
      * @return Response
      */
-    protected function handleVideoTranscoded($payload)
-    {
-        abort(501, "Not Implemented"); // Not Implemented
-    }
+    abstract protected function handleVideoTranscoded($payload);
 
     /**
      * Handle a Pipe webhook.
@@ -55,8 +49,21 @@ class WebhookController extends Controller
      * @param  array  $payload
      * @return Response
      */
-    protected function handleVideoCopiedS3($payload)
-    {
-        abort(501, "Not Implemented"); // Not Implemented
-    }
+    abstract protected function handleVideoCopiedS3($payload);
+
+    /**
+     * Handle a Pipe webhook.
+     *
+     * @param  array  $payload
+     * @return Response
+     */
+    abstract protected function handleVideoCopiedFtp($payload);
+
+    /**
+     * Handle a Pipe webhook.
+     *
+     * @param  array  $payload
+     * @return Response
+     */
+    abstract protected function handleVideoCopiedDbox($payload);
 }
