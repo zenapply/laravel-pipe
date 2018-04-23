@@ -41,7 +41,7 @@ abstract class WebhookController extends Controller
      * @param  array  $payload
      * @return Response
      */
-    abstract protected function handleVideoTranscoded($payload);
+    abstract protected function handleVideoConverted($payload);
 
     /**
      * Handle a Pipe webhook.
