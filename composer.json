@@ -1,5 +1,5 @@
 {
-    "name": "zenapply/laravel-pipe",
+    "name": "packages/laravel-pipe",
     "description": "A library for addpipe.com videos",
     "keywords": [
         "laravel",
@@ -14,15 +14,14 @@
             "email": "tylerarbon@zenapply.com"
         }
     ],
-    "autoload":{
-        "psr-4":{
-            "Zenapply\\Pipe\\":"src/"
+    "autoload": {
+        "psr-4": {
+            "Zenapply\\Pipe\\": "src/",
+            "Zenapply\\Pipe\\Tests\\": "tests/"
         }
     },
     "autoload-dev": {
-        "psr-4": {
-            "Zenapply\\Pipe\\Tests\\": "tests/"
-        }
+        "psr-4": {}
     },
     "minimum-stability": "stable",
     "require": {
@@ -33,15 +32,13 @@
         "orchestra/testbench": "^3.4",
         "phpunit/phpunit": ">=5.7"
     },
-    "suggest": {
-    },
+    "suggest": {},
     "extra": {
         "laravel": {
             "providers": [
                 "Zenapply\\Pipe\\PipeServiceProvider"
             ],
-            "aliases": {
-            }
+            "aliases": {}
         }
     }
 }
